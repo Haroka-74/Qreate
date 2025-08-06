@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <link rel = "icon" type = "image/png" href = "Assets/Favicon.png">
+    <title> Qreate </title>
+</head>
+<body>
+    <div class = "container">
+        <div class = "app">
+            <h2> Qreate </h2>
+            <div class = "row">
+                <input type = "text" id = "input-box" placeholder = "Enter Text or a URL">
+                <button id = "btn"> GENERATE </button>
+            </div>
+            <div id = "qr-code"></div>
+        </div>
+    </div>
+    <div id = "toast-error" class = "toast hidden">
+        <span id = "toast-msg"></span>
+        <span id = "toast-close"> &times; </span>
+    </div>
+    <script src = "main.js"></script>
+    <script src = "https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+</body>
+</html>
